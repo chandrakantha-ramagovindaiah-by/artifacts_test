@@ -21,7 +21,7 @@ jobs:
       run: GOOS=windows GOARCH=amd64 go build ${{ env.FILE_NAME }}.go
       
     - name: craete a directory
-      run: mkdir this_for_testing_to_see_artifacts
+      run: touch this_for_testing_to_see_artifacts
       
     - name: Upload artifact for linux
       uses: actions/upload-artifact@v1.0.0
